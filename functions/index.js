@@ -35,9 +35,9 @@ async function getIQAirApiKeys() {
 /**
  * @param {string} uri 
  * @returns {Promise<[]>} An array with a pair of data which would be [response, error]
- * * sends HTTP request with GET method and returns response data
- * * if request successful, returns [responseData, null]
- * * if reqeust failed, returns [null, error]
+ * * Sends HTTP request with GET method and returns response data
+ * * If request successful, returns [responseData, null]
+ * * If reqeust failed, returns [null, error]
  */
 async function getHTTP(uri) {
   let data = null, error = null;
