@@ -56,7 +56,7 @@ function UTCToTimestamp(utc) {
 }
 
 exports.updateCityWeatherInfo = functions.pubsub
-  .schedule("1 * * * *")
+  .schedule("10 * * * *")
   .onRun(async (context) => {
     const [API_KEY1, API_KEY2, API_KEY3] = await getIQAirApiKeys();
 
